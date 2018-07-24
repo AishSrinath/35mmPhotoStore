@@ -1,7 +1,6 @@
 runtime: php
-api_version: 1
+env: flex
 
-handlers:
-# Serve php scripts.
-- url: /(.+\.php)$
-  script: \1
+runtime_config:
+  document_root: .
+
